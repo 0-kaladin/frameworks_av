@@ -114,6 +114,8 @@ else
 endif
 endif
 
+LOCAL_CFLAGS += -Wno-error=strict-aliasing
+
 LOCAL_SHARED_LIBRARIES := \
         libbinder \
         libcamera_client \
