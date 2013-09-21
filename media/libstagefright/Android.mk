@@ -165,7 +165,9 @@ LOCAL_SHARED_LIBRARIES += \
         libstagefright_foundation \
         libdl
 
-LOCAL_CFLAGS += -Wno-multichar
+LOCAL_CFLAGS += \
+        -Wno-multichar \
+        -Wno-error=strict-aliasing
 
 ifeq ($(BOARD_USE_SAMSUNG_COLORFORMAT), true)
 LOCAL_CFLAGS += -DUSE_SAMSUNG_COLORFORMAT
